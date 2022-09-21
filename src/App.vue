@@ -32,7 +32,7 @@ import Footer from './components/Footer.vue';
  }
  .main-container{
   margin: 50px;
-  min-height: 345px;
+  min-height: 250px;
  }
 
  h1{
