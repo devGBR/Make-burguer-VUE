@@ -1,18 +1,14 @@
 <template>
   <nav>
-    <div id="logo-url">
-    <router-link to="/" >
+    <router-link to="/" id="logo-url">
         <img :src="logo" :alt="alt" id="logo">
     </router-link>
-    </div>
-    <div>
-    <router-link to="/" class="link">Home</router-link> 
-    </div>
+   
+    <router-link to="/">Home</router-link> 
     |
-    <div>
-    <router-link to="/pedidos" class = "link">Pedidos</router-link>
-    </div>
-  </nav>
+    <router-link to="/pedidos">Pedidos</router-link>
+   
+   </nav>
 </template>
 <script>
 export default {
@@ -29,16 +25,11 @@ export default {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    color: antiquewhite;
-    border-radius: 10px;
-    
- }
- nav div{
-    padding: 10px;
+    color: #fff;
     
  }
  
- #logo-url{
+ nav #logo-url{
     margin: auto;
     margin-left: 0;
  }
@@ -47,10 +38,16 @@ export default {
   height: 40px;
   
  }
- .link{
+ nav a{
   text-decoration: none;
-  color: #fff;
+  color: #FCBA03;
   font-size: 18px;
+  margin: 12px;
+  transition: .5s; 
+ }
+
+ nav a:hover{
+   color: #fff; 
  }
 
 </style>
