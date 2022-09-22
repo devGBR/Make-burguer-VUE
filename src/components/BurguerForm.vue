@@ -26,15 +26,15 @@
                 <div id="opcionais-container" class="input-container">
                     <label  for="opcionais" id="opcionais-title">Selecione os opcionais:</label>
                     <div class="checkbox-container">
-                        <input type="checkbox" name="opcionais" v-model="opcionais" value="Salame">
+                        <input type="checkbox" name="opcionais" v-model="opcionais" value="Salame" id="box">
                         <span>Salame</span>
                     </div>
                     <div class="checkbox-container">
-                        <input type="checkbox" name="opcionais" v-model="opcionais" value="Cheddar">
+                        <input type="checkbox" name="opcionais" v-model="opcionais" value="Cheddar" id="box">
                         <span>Cheddar</span>
                     </div>
                     <div class="checkbox-container">
-                        <input type="checkbox" name="opcionais" v-model="opcionais" value="Bacon">
+                        <input type="checkbox" name="opcionais" v-model="opcionais" value="Bacon" id="box">
                         <span>Bacon</span>
                     </div>
                     <div class="input-container">
@@ -118,5 +118,92 @@ export default {
         background-color: transparent;
         color: #222;
     }
+    @media only screen and (max-width:320px){
+        #formBurguer{
+            margin: 0 -40px;
+            width: 200px;
+
+        }
+    }
+    @media only screen and (max-width:375px){
+        #formBurguer{
+            max-width: 400px;
+            margin: 0 ;
+        }
+        
+    }
+    @media only screen and (max-width:426px){
+        #formBurguer{
+        max-width: 400px;
+        margin: 0 10px;
+            
+        }
+        
+    }
+    @media only screen and (min-width:600px){
+        #formBurguer{
+            max-width: 400px;
+            margin: 0 180px;
+            
+        }
+    }
+    @media only screen and (min-width:768px){
+        #formBurguer{
+            max-width: 400px;
+            margin: 0 180px;
+            
+        }
+    }
+    @media only screen and (min-width:1024px){
+        #formBurguer{
+            max-width: 400px;
+            margin: 0 310px;
+            
+        }
+    }
+    @media only screen and (min-width:1440px){
+        #formBurguer{
+            max-width: 400px;
+            margin: 0 510px;
+            
+        }
+    }
+    @media only screen and (min-width:2560px){
+        #formBurguer{
+            max-width: 800px;
+            width: 800px;
+            margin: 0 929px;
+            font-size: 80px;
+        }
+        .submit-btn{
+        background-color: #222;
+        color: #FCBA03;
+        font-weight: bolder;
+        border: 2px solid #222; 
+        padding: 10px 15px;
+        font-size: 40px;
+        margin: 0 auto;
+        cursor: pointer;
+        transition: 0.5s;
+        width: 400px;
+        height: 140px;
+        border-radius: 3%;
+    
+    }
+    #box{
+        height: 40px;
+        width: 50px;
+    }
+     .input-container{
+        padding: 10px;
+     }
+     #pao,#carne,#nome{
+        width: 600px;
+        height: 100px;
+        font-size: 40px;
+     }
+    }
+    
+    
 
 </style>
