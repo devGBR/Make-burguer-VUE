@@ -24,7 +24,10 @@ export default {
     }
     #main-banner h1{
         color: #fff;
-        margin: 30px;
+        background-color: #222;
+        text-align: center;
+        padding: 20px 40px;
+        font-size: 60px;
     }
     @media only screen and (max-width:320px){
         #main-banner{
@@ -46,8 +49,15 @@ export default {
         }
         #main-banner h1{
             font-size: 15px;
+            
         }
         
+    }
+    @media only screen and (min-width:600px){
+        #main-banner{
+            background-position: 0 ;
+            height: 600px;
+        }
     }
     @media only screen and (min-width:768px){
         #main-banner{
