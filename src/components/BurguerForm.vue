@@ -130,51 +130,56 @@ export default {
     }
     @media only screen and (max-width:320px){
         #formBurguer{
-            margin: 0 -40px;
+            margin: 0 auto;
             width: 200px;
+            padding: 10px 60px;
 
         }
     }
     @media only screen and (max-width:375px){
         #formBurguer{
+            width:400px;
             max-width: 400px;
-            margin: 0 ;
+            margin: 0px -46px;
+            padding: 20px 60px;
         }
         
     }
     @media only screen and (max-width:426px){
         #formBurguer{
         max-width: 400px;
-        margin: 0 10px;
-            
+        margin: 0px -44.5px;
+        padding: 20px 50px;
         }
         
     }
     @media only screen and (min-width:600px){
         #formBurguer{
             max-width: 400px;
-            margin: 0 180px;
-            
+            margin: 0 auto;
+            padding: 10px 60px;
         }
     }
     @media only screen and (min-width:768px){
         #formBurguer{
             max-width: 400px;
-            margin: 0 180px;
-            
+            margin: 0 auto;
+            padding: 10px 60px;
         }
     }
     @media only screen and (min-width:1024px){
         #formBurguer{
             max-width: 400px;
-            margin: 0 310px;
+            margin: 0 auto;
+            padding: 10px 60px;
             
         }
     }
     @media only screen and (min-width:1440px){
         #formBurguer{
-            max-width: 400px;
-            margin: 0 510px;
+            max-width: 420px;
+            margin: 0 auto;
+            padding: 15px 60px;
             
         }
     }
@@ -182,8 +187,9 @@ export default {
         #formBurguer{
             max-width: 800px;
             width: 800px;
-            margin: 0 929px;
+            margin: 0 auto;
             font-size: 80px;
+            border: 2px solid #222;
         }
         .submit-btn{
         background-color: #222;
@@ -203,14 +209,22 @@ export default {
     #box{
         height: 40px;
         width: 50px;
+        
     }
      .input-container{
         padding: 10px;
+    
      }
      #pao,#carne,#nome{
         width: 600px;
         height: 100px;
         font-size: 40px;
+     }
+     #opcionais-container{
+        width: 800px;
+     }
+     .checkbox-container{
+        font-size: 50px;
      }
     }
     
