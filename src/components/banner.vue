@@ -27,7 +27,9 @@ export default {
         background-color: #222;
         text-align: center;
         padding: 20px 40px;
-        font-size: 60px;
+
+        font-size: 40px;
+
     }
     @media only screen and (max-width:320px){
         #main-banner{

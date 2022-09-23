@@ -18,6 +18,7 @@ export default {
 }
 </script>
 
+
 <style scoped>
  h1{
   max-width: 500px;
@@ -29,3 +30,4 @@ export default {
   margin-bottom: 10px;
  }
 </style>
+
