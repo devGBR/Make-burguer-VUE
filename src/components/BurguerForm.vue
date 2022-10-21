@@ -5,7 +5,7 @@
         <!-- <p>componente de msg</p> -->
 
         <div>
-            <form id="formBurguer" @submit="createBurguer">
+            <form id="formBurguer" @submit="offload">
                 <div class="input-container">
                     <label for="nome">Nome do cliente:</label>
                     <input type="text" id="nome" name="oame" v-model="nome" placeholder="Digite seu nome">
@@ -34,7 +34,7 @@
                     </div>
     
                     <div class="input-container">
-                        <input type="submit" class="submit-btn" value="Criar meu Burguer">
+                        <Button v-on:criarburguer="createBurguer" />
                     </div>
                 </div>
             </form>
@@ -44,10 +44,11 @@
 </template>
 
 <script>
+import Button from './Button.vue';
 export default {
-    name : "BurguerForm",
-    data(){
-        return{
+    name: "BurguerForm",
+    data() {
+        return {
             paes: null,
             carnes: null,
             opcionaisdata: null,
@@ -55,53 +56,47 @@ export default {
             carne: null,
             opcionais: [],
             msg: null
-        }
+        };
     },
     methods: {
-        async getIngredientes(){
+        async offload(e){
+            e.preventDefault();
+        },
+        async getIngredientes() {
             const req = await fetch("http://localhost:3000/ingredientes");
             const data = await req.json();
-             
             this.paes = data.paes;
             this.carnes = data.carnes;
             this.opcionaisdata = data.opcionais;
-
         },
-        async createBurguer(e){
-
-            e.preventDefault()
-
+        async createBurguer() {
+            
             const data = {
-                nome : this.nome,
-                carne : this.carne,
+                nome: this.nome,
+                carne: this.carne,
                 pao: this.pao,
                 opcionais: Array.from(this.opcionais),
                 status: "Solicitado"
-            }
-
+            };
             const dataJson = JSON.stringify(data);
-
-            const req = await fetch("http://localhost:3000/burgers",{
+            const req = await fetch("http://localhost:3000/burgues", {
                 method: "POST",
-                headers: {"Content-Type": "application/json"},
+                headers: { "Content-Type": "application/json" },
                 body: dataJson
             });
-
             const res = await req.json();
-
             // msg
-
             //limpa dados
             this.nome = "";
             this.carne = "";
             this.pao = "";
             this.opcionais = "";
-
         }
     },
     mounted() {
-        this.getIngredientes()
-    }
+        this.getIngredientes();
+    },
+    components: { Button }
 }
 </script>
 

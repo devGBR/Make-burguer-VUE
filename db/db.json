@@ -39,27 +39,27 @@
     "opcionais": [
       {
         "id": 1,
-        "tipo": "Bacon"
+        "tipo": "Bacon "
       },
       {
         "id": 2,
-        "tipo": "Cheddar"
+        "tipo": "Cheddar "
       },
       {
         "id": 3,
-        "tipo": "Salame"
+        "tipo": "Salame "
       },
       {
         "id": 4,
-        "tipo": "Tomate"
+        "tipo": "Tomate "
       },
       {
         "id": 4,
-        "tipo": "Cebola roxa"
+        "tipo": "Cebola roxa "
       },
       {
         "id": 4,
-        "tipo": "Pepino"
+        "tipo": "Pepino "
       }
     ]
   },
@@ -77,63 +77,29 @@
       "tipo": "Finalizado"
     }
   ],
-  "burgers": [
+  "burgues": [
     {
       "nome": "Gabriel",
-      "carne": "Alcatra",
+      "carne": "Maminha",
       "pao": "Italiano Branco",
-      "opcionais": [],
+      "opcionais": [
+        "Bacon ",
+        "Cheddar"
+      ],
       "status": "Solicitado",
       "id": 1
     },
     {
-      "nome": "Gabriel",
-      "carne": "Alcatra",
-      "pao": "Italiano Branco",
-      "opcionais": [
-        "Bacon",
-        "Cheddar",
-        "Salame"
-      ],
-      "status": "Solicitado",
-      "id": 2
-    },
-    {
-      "nome": "Gabriel",
-      "carne": "Alcatra",
-      "pao": "Italiano Branco",
-      "opcionais": [
-        "Bacon",
-        "Cheddar",
-        "Salame"
-      ],
-      "status": "Solicitado",
-      "id": 3
-    },
-    {
-      "nome": "Gabriel",
-      "carne": "Alcatra",
-      "pao": "Italiano Branco",
-      "opcionais": [
-        "Bacon",
-        "Cheddar",
-        "Salame",
-        "Tomate",
-        "Cebola roxa"
-      ],
-      "status": "Solicitado",
-      "id": 4
-    },
-    {
-      "nome": "Gabriel",
+      "nome": "GRAGA",
       "carne": "Picanha",
       "pao": "3 Queijos",
       "opcionais": [
-        "Bacon",
-        "Cheddar"
+        "Bacon ",
+        "Cheddar ",
+        "Tomate "
       ],
       "status": "Solicitado",
-      "id": 5
+      "id": 2
     }
   ]
 }
